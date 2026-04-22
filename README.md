@@ -17,9 +17,9 @@ A Grammarly-style Bengali spellchecker that runs as a Chrome extension. It highl
 
 ### ⚡ See it in action
 
-| 🔴 Real-Time Underlines | 💬 Smart Suggestions |
-| :---: | :---: |
-| <img src="docs/wavy_underlines.png" width="400" alt="Wavy Underlines"> | <img src="docs/suggestion_tooltip.png" width="400" alt="Suggestion Tooltip"> |
+<p align="center">
+  <img src="docs/suggestion_tooltip.png" alt="Suggestion Tooltip" width="600">
+</p>
 
 ![Architecture](docs/architecture.png)
 
