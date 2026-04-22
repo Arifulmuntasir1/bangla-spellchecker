@@ -553,7 +553,7 @@ python app.py
 | **No grammar checking** | This is a spellchecker, not a grammar checker — it won't catch grammatically incorrect but correctly-spelled words |
 | **Single-line `<input>` not supported** | By design, to avoid interfering with search bars, URL fields, etc. |
 | **Google Docs** | Uses canvas-based rendering, so the content script can't access the text DOM |
-| **Server must run locally** | The Flask server must be running for the extension to work — there's no offline mode |
+| **Server must run locally** | The Flask server must be running for the extension to work |
 | **No frequency data** | All dictionary words have equal frequency (1). We mitigate this with a multi-heuristic ranking system, but truly frequency-aware ranking would further improve suggestion order |
 | **Edit distance 2 limit** | Words that differ by more than 2 edits from any dictionary word will get no suggestions |
 
