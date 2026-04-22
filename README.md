@@ -23,6 +23,26 @@ A Grammarly-style Bengali spellchecker that runs as a Chrome extension. It highl
 
 ---
 
+## Table of Contents
+
+- [Quick Start](#quick-start)
+- [Features](#features)
+- [How It Works](#how-it-works)
+- [Architecture](#architecture)
+- [Project Structure](#project-structure)
+- [Installation & Setup](#installation--setup)
+- [How to Use](#how-to-use)
+- [API Reference](#api-reference)
+- [Technical Deep Dive](#technical-deep-dive)
+- [Configuration](#configuration)
+- [Troubleshooting](#troubleshooting)
+- [Limitations & Known Issues](#limitations--known-issues)
+- [Contributing](#contributing)
+- [Acknowledgements & Credits](#acknowledgements--credits)
+- [License](#license)
+
+---
+
 ## Quick Start
 
 ```bash
@@ -42,26 +62,6 @@ python app.py
 
 # 4. Open any website, type Bengali — misspelled words get red underlines!
 ```
-
----
-
-## Table of Contents
-
-- [Quick Start](#quick-start)
-- [Features](#features)
-- [How It Works](#how-it-works)
-- [Architecture](#architecture)
-- [Project Structure](#project-structure)
-- [Installation & Setup](#installation--setup)
-- [How to Use](#how-to-use)
-- [API Reference](#api-reference)
-- [Technical Deep Dive](#technical-deep-dive)
-- [Configuration](#configuration)
-- [Troubleshooting](#troubleshooting)
-- [Limitations & Known Issues](#limitations--known-issues)
-- [Contributing](#contributing)
-- [Acknowledgements & Credits](#acknowledgements--credits)
-- [License](#license)
 
 ---
 
