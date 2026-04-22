@@ -1,0 +1,62 @@
+/* ===================================================================
+   Bengali Spellchecker – Injected Styles
+   =================================================================== */
+
+.bspell-error {
+  text-decoration: underline wavy red;
+  text-decoration-skip-ink: none;
+  cursor: pointer;
+  position: relative;
+  background: transparent;
+}
+
+.bspell-tooltip {
+  position: absolute;
+  z-index: 2147483647;
+  background: #1e1e2e;
+  color: #cdd6f4;
+  border: 1px solid #45475a;
+  border-radius: 8px;
+  padding: 6px 0;
+  min-width: 160px;
+  max-width: 280px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+  font-family: 'Segoe UI', 'Noto Sans Bengali', sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+  animation: bspell-fadein 0.15s ease-out;
+}
+
+@keyframes bspell-fadein {
+  from { opacity: 0; transform: translateY(-4px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.bspell-tooltip-header {
+  padding: 4px 12px 6px;
+  font-size: 12px;
+  color: #f38ba8;
+  border-bottom: 1px solid #313244;
+  margin-bottom: 2px;
+  user-select: none;
+}
+
+.bspell-tooltip-item {
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: background 0.12s ease;
+  border-radius: 4px;
+  margin: 0 4px;
+}
+
+.bspell-tooltip-item:hover {
+  background: #313244;
+  color: #a6e3a1;
+}
+
+.bspell-tooltip-empty {
+  padding: 8px 12px;
+  color: #6c7086;
+  font-style: italic;
+  user-select: none;
+}
