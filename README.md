@@ -15,6 +15,12 @@ A Grammarly-style Bengali spellchecker that runs as a Chrome extension. It highl
 
 > **Privacy first:** Your text never leaves your machine. The server runs 100% locally on `localhost`.
 
+### ⚡ See it in action
+
+| 🔴 Real-Time Underlines | 💬 Smart Suggestions |
+| :---: | :---: |
+| <img src="docs/wavy_underlines.png" width="400" alt="Wavy Underlines"> | <img src="docs/suggestion_tooltip.png" width="400" alt="Suggestion Tooltip"> |
+
 ![Architecture](docs/architecture.png)
 
 ---
@@ -400,23 +406,6 @@ Simple health check.
 ---
 
 ## Technical Deep Dive
-
-### SymSpell: Why Not Hunspell?
-
-| Feature | SymSpell | Hunspell |
-|---------|----------|----------|
-| Lookup speed | **O(1)** average | O(n) worst case |
-| Suggestion speed | ~microseconds | ~milliseconds |
-| Memory usage | Higher (precomputed deletes) | Lower |
-| Affix support | ❌ No | ✅ Yes |
-| Algorithm | Symmetric Delete | Affix compression + ngrams |
-
-We chose **SymSpell** because:
-- **Speed**: O(1) lookups via precomputed delete combinations — critical for real-time checking
-- **Simplicity**: No `.aff` (affix) file needed — just the word list
-- **Edit distance**: Uses Damerau-Levenshtein distance (handles transpositions)
-
-**Trade-off**: SymSpell doesn't understand Bengali morphology (suffixes like -তে, -য়, -র). A word like "বাংলায়" (correct inflected form) may be flagged if only "বাংলা" is in the dictionary.
 
 ### Debouncing Strategy
 
