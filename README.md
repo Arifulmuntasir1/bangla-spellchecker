@@ -17,11 +17,9 @@ A Grammarly-style Bengali spellchecker that runs as a Chrome extension. It highl
 
 ### ⚡ See it in action
 
-<p align="center">
-  <img src="docs/suggestion_tooltip.png" alt="Suggestion Tooltip" width="600">
-</p>
-
-![Architecture](docs/architecture.png)
+| ⚙️ Architecture | 💬 Smart Suggestions |
+| :---: | :---: |
+| <img src="docs/architecture.png" width="450" alt="Architecture"> | <img src="docs/suggestion_tooltip.png" width="450" alt="Suggestion Tooltip"> |
 
 ---
 
